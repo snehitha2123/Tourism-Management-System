@@ -1,0 +1,19 @@
+/*
+Group_Name: Final Project 96
+Names: Snehitha Sai Sappa, Hitesh Koneru
+Class: IFT 530
+Date :04/24/2024
+Assignment: Final Project
+*/
+
+CREATE TABLE TOURIST_SPOTS_AUDIT (
+    AUDIT_ID INT AUTO_INCREMENT PRIMARY KEY,
+    SPOTID INT,
+    Name VARCHAR(20),
+    SEASON VARCHAR(10),
+    RATINGS FLOAT,
+    ADDRESS VARCHAR(100),
+    PINCODE NUMERIC(6),
+    ACTION VARCHAR(10), -- Insert, Update, or Delete
+    CHANGE_DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
